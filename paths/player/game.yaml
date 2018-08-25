@@ -1,4 +1,6 @@
 get:
+  tags: 
+    - Player Information
   summary: Game mode stats for a player
   description: Returns the player's stats for the specified gamemode.
   parameters:

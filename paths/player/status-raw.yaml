@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Player Information
   summary: find status raw
   operationId: findstatusraw
   responses:

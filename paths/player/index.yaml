@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Player Information
   summary: Basic Information about a player
   description: Returns a player
   parameters:

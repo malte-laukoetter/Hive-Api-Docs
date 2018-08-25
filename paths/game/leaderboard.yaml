@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Game Mode Information
   summary: find 0 20
   operationId: find020
   responses:

@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Game Mode Information
   responses:
     '200':
       description: OK

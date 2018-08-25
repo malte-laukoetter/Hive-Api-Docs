@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Server Statistics
   summary: find server playercount
   operationId: findserverplayercount
   responses:

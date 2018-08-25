@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Staff Statistics
   summary: find v1 staff
   operationId: findv1staff
   responses:

@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Player Information
   summary: find Lergin_ status
   operationId: findLergin_status
   responses:

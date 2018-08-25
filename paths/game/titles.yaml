@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Game Mode Information
   summary: find DR titles
   operationId: findDRtitles
   responses:

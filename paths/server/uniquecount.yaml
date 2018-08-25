@@ -1,4 +1,6 @@
 get:
+  tags: 
+   - Server Statistics
   summary: find server uniquecount
   operationId: findserveruniquecount
   responses:

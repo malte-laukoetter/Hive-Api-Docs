@@ -1,4 +1,6 @@
 get:
+  tags:
+   - Game Mode Information
   summary: Lists all GameModes
   description: Returns a map containing the gameids and names
   responses:
