@@ -1,0 +1,17 @@
+get:
+  summary: find server playercount
+  operationId: findserverplayercount
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              count:
+                type: string
+                minLength: 1
+            required:
+              - count

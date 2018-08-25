@@ -1,0 +1,51 @@
+get:
+  summary: find server achievements
+  operationId: findserverachievements
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: array
+            description: ''
+            minItems: 1
+            uniqueItems: true
+            items:
+              type: object
+              required:
+                - name
+                - publicname
+                - description
+                - stages
+                - secret
+                - global
+                - custom
+                - disabled
+                - rewardtype
+                - rewardarguments
+              properties:
+                name:
+                  type: string
+                  minLength: 1
+                publicname:
+                  type: string
+                  minLength: 1
+                description:
+                  type: string
+                  minLength: 1
+                stages:
+                  type: number
+                secret:
+                  type: boolean
+                global:
+                  type: boolean
+                custom:
+                  type: boolean
+                disabled:
+                  type: boolean
+                rewardtype:
+                  type: string
+                  minLength: 1
+                rewardarguments:
+                  type: string

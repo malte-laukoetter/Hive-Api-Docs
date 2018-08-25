@@ -1,0 +1,81 @@
+get:
+  summary: find 0 20
+  operationId: find020
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              start:
+                type: number
+              end:
+                type: number
+              leaderboard:
+                type: array
+                uniqueItems: true
+                minItems: 1
+                items:
+                  required:
+                    - index
+                    - humanIndex
+                    - UUID
+                    - total_points
+                    - victories
+                    - games_played
+                    - kills
+                    - deaths
+                    - beds_destroyed
+                    - teams_eliminated
+                    - username
+                  properties:
+                    index:
+                      type: number
+                    humanIndex:
+                      type: number
+                    UUID:
+                      type: string
+                      minLength: 1
+                    total_points:
+                      type: number
+                    victories:
+                      type: number
+                    games_played:
+                      type: number
+                    kills:
+                      type: number
+                    deaths:
+                      type: number
+                    beds_destroyed:
+                      type: number
+                    teams_eliminated:
+                      type: number
+                    username:
+                      type: string
+                      minLength: 1
+            required:
+              - start
+              - end
+              - leaderboard
+  parameters:
+    - name: game-id
+      in: path
+      description: Game Id
+      required: true
+      schema:
+        type: string
+    - name: start
+      in: path
+      description: start
+      required: true
+      schema:
+        type: string
+    - name: end
+      in: path
+      description: end
+      required: true
+      schema:
+        type: string

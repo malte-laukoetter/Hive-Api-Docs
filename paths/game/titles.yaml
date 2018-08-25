@@ -1,0 +1,39 @@
+get:
+  summary: find DR titles
+  operationId: findDRtitles
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: array
+            description: ''
+            minItems: 1
+            uniqueItems: true
+            items:
+              type: object
+              required:
+                - name
+                - required_points
+                - human_name
+                - plain_name
+              properties:
+                name:
+                  type: string
+                  minLength: 1
+                required_points:
+                  type: number
+                human_name:
+                  type: string
+                  minLength: 1
+                plain_name:
+                  type: string
+                  minLength: 1
+  parameters:
+    - name: game-id
+      in: path
+      description: Game Id
+      required: true
+      schema:
+        type: string

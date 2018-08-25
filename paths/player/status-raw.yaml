@@ -1,0 +1,27 @@
+get:
+  summary: find status raw
+  operationId: findstatusraw
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              status:
+                type: string
+                minLength: 1
+              cached:
+                type: number
+            required:
+              - status
+              - cached
+  parameters:
+    - name: uuid-or-name
+      in: path
+      description: uuid or name
+      required: true
+      schema:
+        type: string

@@ -10,6 +10,15 @@ paths:
   '/player/{nameOrUuid}':
     $ref: './paths/player/index.yaml'
   
+  '/player/{uuid-or-name}/status/raw':
+    $ref: './paths/player/status-raw.yaml'
+  
+  '/player/{uuid-or-name}/status':
+    $ref: './paths/player/status.yaml'
+
+
+
+
   '/game':
     $ref: './paths/games.yaml'
 
@@ -21,8 +30,25 @@ paths:
   '/game/{game-id}/maps/{map-id}':
     $ref: './paths/game/map.yaml'
 
+  '/game/{game-id}/titles':
+    $ref: './paths/game/titles.yaml'
+
+
+
+  '/game/{game-id}/leaderboard/{start}/{end}':
+    $ref: './paths/game/leaderboard.yaml'
+
   '/game/SG/data/{game-id}':
     $ref: './paths/game/SG/data.yaml'
   '/game/SG/data/{game-id}/{player-uuid}':
     $ref: './paths/game/SG/dataPlayer.yaml'
+
+
+
+  '/server/playercount':
+    $ref: './paths/server/playercount.yaml'
+
+  '/server/achievements':
+    $ref: './paths/server/achievements.yaml'
+
 

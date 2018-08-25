@@ -1,0 +1,36 @@
+get:
+  summary: find Lergin_ status
+  operationId: findLergin_status
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              status:
+                type: object
+                properties:
+                  description:
+                    type: string
+                    minLength: 1
+                  game:
+                    type: string
+                    minLength: 1
+                required:
+                  - description
+                  - game
+              cached:
+                type: number
+            required:
+              - status
+              - cached
+  parameters:
+    - name: uuid-or-name
+      in: path
+      description: uuid or name
+      required: true
+      schema:
+        type: string
