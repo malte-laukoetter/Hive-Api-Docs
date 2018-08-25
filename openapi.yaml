@@ -4,10 +4,10 @@ servers:
 info:
   description: ''
   version: 1.0.0
-  title: HiveMc API
+  title: HiveMC API
   contact: {}
 paths:
-  '/player/{nameOrUuid}':
+  '/player/{uuid-or-name}':
     $ref: './paths/player/index.yaml'
   
   '/player/{uuid-or-name}/status/raw':
@@ -16,6 +16,8 @@ paths:
   '/player/{uuid-or-name}/status':
     $ref: './paths/player/status.yaml'
 
+  '/player/{uuid-or-name}/{game}':
+    $ref: './paths/player/game.yaml'
 
 
 
