@@ -8,6 +8,6 @@ info:
   contact: {}
 paths:
   '/player/{nameOrUuid}':
-    $ref: './paths/player/index.yaml'
+    $ref: '/paths/player/index.yaml'
   '/games':
-    $ref: './paths/games.yaml'
+    $ref: '/paths/games.yaml'
