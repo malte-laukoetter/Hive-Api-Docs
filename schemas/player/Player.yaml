@@ -2,8 +2,9 @@
  properties: 
     username:
       type: string
-    modernRank:
-      type: object
+      description: The player's username.
+    modernRank: 
+      type: object # Might want to export this to its own file as well
       properties:
         enum:
           type: string
@@ -13,16 +14,20 @@
           type: integer
     tokens:
       type: integer
+      description: The amount of tokens the player has.
     medals:
       type: integer
+      description: The amount of gold medals the player has.
     crates:
       type: integer
+      description: The amount of crates the player has.
     UUID:
       type: string
+      description: The player's Universally Unique IDentifier, with dashes stripped away.
       format: uuid
       pattern: '[0-9a-f]{32}'
     status:
-      type: object
+      type: object # Might want to export this to its own file
       properties:
         description:
           type: string
@@ -32,12 +37,15 @@
       type: integer
       format: timestamp
     firstLogin:
+      description: The player's first login timestamp in seconds.
       type: integer
       format: timestamp
     lastLogin:
+      description: The player's last login timestamp in seconds.
       type: integer
       format: timestamp
     lastLogout:
+      description: The player's last logout timestamp in seconds.
       type: integer
       format: timestamp
     achievements:
@@ -46,12 +54,15 @@
          type: object
          $ref: '../../schemas/Achievement.yaml'
        trophies:
+         description: List of trophies the player has. Trophies are awarded on each Beeday or upon getting all the achievements in a game mode.
          type: array
          items:
            type: object
            properties:
              game:
+               description: The game mode involved, or "Global" if it's a Beeday trophy.
                type: string
-             achievement: 
+             achievement:
+               description: The achievement involved. 
                type: string
              
