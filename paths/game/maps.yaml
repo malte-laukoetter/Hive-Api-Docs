@@ -1,0 +1,35 @@
+get:
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            additionalProperties:
+              type: object
+              properties:
+                worldname:
+                  type: string
+                  minLength: 1
+                mapname:
+                  type: string
+                  minLength: 1
+                mapauthor:
+                  type: string
+                  minLength: 1
+                added:
+                  type: number
+              required:
+                - worldname
+                - mapname
+                - mapauthor
+                - added
+  parameters:
+    - name: game-id
+      in: path
+      description: Game Id
+      required: true
+      schema:
+        type: string

@@ -1,0 +1,52 @@
+get:
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              gameid:
+                type: number
+              gameevents:
+                type: array
+                items:
+                  properties: {}
+              server:
+                type: string
+                minLength: 1
+              winner:
+                type: string
+                minLength: 1
+              players:
+                type: array
+                items:
+                  properties: {}
+              endtime:
+                type: number
+              starttime:
+                type: number
+              map:
+                type: string
+                minLength: 1
+              version:
+                type: number
+            required:
+              - gameid
+              - gameevents
+              - server
+              - winner
+              - players
+              - endtime
+              - starttime
+              - map
+              - version
+  parameters:
+    - name: game-id
+      in: path
+      description: Game Id
+      required: true
+      schema:
+        type: string

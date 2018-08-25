@@ -1,0 +1,51 @@
+get:
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              LOBBY:
+                type: array
+                uniqueItems: true
+                minItems: 1
+                items:
+                  required:
+                    - sender
+                    - state
+                    - time
+                    - type
+                    - message
+                  properties:
+                    sender:
+                      type: string
+                      minLength: 1
+                    state:
+                      type: string
+                      minLength: 1
+                    time:
+                      type: number
+                    type:
+                      type: string
+                      minLength: 1
+                    message:
+                      type: string
+                      minLength: 1
+            required:
+              - LOBBY
+  parameters:
+    - name: game-id
+      in: path
+      description: Game Id
+      required: true
+      schema:
+        type: string
+    - name: player-uuid
+      in: path
+      description: Player UUID
+      required: true
+      schema:
+        type: string

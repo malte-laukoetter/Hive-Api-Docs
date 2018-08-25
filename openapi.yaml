@@ -9,5 +9,20 @@ info:
 paths:
   '/player/{nameOrUuid}':
     $ref: './paths/player/index.yaml'
-  '/games':
+  
+  '/game':
     $ref: './paths/games.yaml'
+
+  '/game/{game-id}':
+    $ref: './paths/game/index.yaml'
+
+  '/game/{game-id}/maps':
+    $ref: './paths/game/maps.yaml'
+  '/game/{game-id}/maps/{map-id}':
+    $ref: './paths/game/map.yaml'
+
+  '/game/SG/data/{game-id}':
+    $ref: './paths/game/SG/data.yaml'
+  '/game/SG/data/{game-id}/{player-uuid}':
+    $ref: './paths/game/SG/dataPlayer.yaml'
+
