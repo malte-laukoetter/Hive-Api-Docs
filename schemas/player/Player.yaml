@@ -1,0 +1,8 @@
+type: object
+properties:
+  username: 
+    type: string
+  rankName:
+    type: string
+  legacyRank:
+    type: integer
