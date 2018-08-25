@@ -4,7 +4,7 @@ properties:
     type: integer
   unlockedAt:
     type: integer
-    description: timestamp
+    format: timestamp
   from:
     type: string
     description: |

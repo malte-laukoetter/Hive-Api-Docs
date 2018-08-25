@@ -60,7 +60,7 @@ get:
                 type: object
                 additionalProperties:
                   type: object
-                  $ref: '/schemas/Achievement.yaml'
+                  $ref: '../../schemas/Achievement.yaml'
               trophies:
                 type: array
                 items:
