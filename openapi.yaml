@@ -1,0 +1,43 @@
+openapi: 3.0.0
+servers:
+  - url: 'http://api.hivemc.com/v1'
+info:
+  description: ''
+  version: 1.0.0
+  title: HiveMc API
+  contact: {}
+paths:
+  '/player/{nameOrUuid}':
+    get:
+      summary: Basic Information about a player
+      description: Returns a player
+      parameters:
+        - name: nameOrUuid
+          in: path
+          description: Name or UUID of the player to return
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Player'
+components:
+  schemas:
+    Player:
+      type: object
+      properties:
+        username:
+          type: string
+        modernRank:
+          type: object
+          properties:
+            enum:
+              type: string
+            human:
+              type: string
+            index:
+              type: integer
