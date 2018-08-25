@@ -1,7 +1,7 @@
 get:
   tags:
    - Server Statistics
-  summary: Retrieves the server current player count
+  summary: Retrieves the server's current player count
   operationId: findserverplayercount
   responses:
     '200':
