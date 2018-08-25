@@ -9,12 +9,12 @@ properties:
     type: string
     description: |
       only for THESWARM
-      uuid of the player that has infected this player
+      UUID of the player that has infected this player
   game:
     type: string
     description: |
       only for THESWARM
-      name of the game the player was infected in 
+      Name of the game the player was infected in 
 required:
   - progress
   - unlockedAt
