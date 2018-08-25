@@ -1,0 +1,8 @@
+type: object
+properties:
+  UUID:
+    type: string
+    format: uuid
+    pattern: '[0-9a-f]{32}'
+required:
+  - UUID

@@ -14,7 +14,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../../schemas/player/Player.yaml'
+            $ref: '../../schemas/player/PlayerGame.yaml'
     '404':
       description: Profile not found, usually because the player has never played the game mode.
                
