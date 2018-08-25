@@ -1,7 +1,7 @@
 get:
   tags:
    - Server Statistics
-  summary: find server achievements
+  summary: Lists the global achievements
   operationId: findserverachievements
   responses:
     '200':

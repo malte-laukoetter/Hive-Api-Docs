@@ -1,7 +1,7 @@
 get:
   tags:
    - Server Statistics
-  summary: find server ranks
+  summary: Lists all the ranks of the server
   operationId: findserverranks
   responses:
     '200':
@@ -9,17 +9,17 @@ get:
       content:
         application/json:
           schema:
-            description: ''
-            type: object
-            additionalProperties:
-                type: object
-                properties:
+            description: A list of ranks
+            type: array
+            items:
+              type: object
+              properties:
                   enum:
                     type: string
                     minLength: 1
                   human:
                     type: string
                     minLength: 1
-                required:
+              required:
                   - enum
                   - human

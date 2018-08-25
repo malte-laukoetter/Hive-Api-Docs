@@ -1,7 +1,7 @@
 get:
   tags: 
    - Server Statistics
-  summary: find server uniquecount
+  summary: Retrieves the server unique player count
   operationId: findserveruniquecount
   responses:
     '200':

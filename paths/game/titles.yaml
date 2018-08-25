@@ -1,7 +1,7 @@
 get:
   tags:
    - Game Mode Information
-  summary: find DR titles
+  summary: Lists all the titles (aka ranks) of a game mode
   operationId: findDRtitles
   responses:
     '200':

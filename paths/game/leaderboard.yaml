@@ -1,7 +1,7 @@
 get:
   tags:
    - Game Mode Information
-  summary: find 0 20
+  summary: Retrieve the leaderboard of a game mode.
   operationId: find020
   responses:
     '200':

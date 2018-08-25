@@ -2,6 +2,7 @@ get:
   tags:
    - Game Data
    - Game Mode Information
+  summary: Retrieves match data
   responses:
     '200':
       description: OK

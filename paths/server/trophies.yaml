@@ -1,7 +1,7 @@
 get:
   tags:
    - Server Statistics
-  summary: find server trophies
+  summary: Lists all the trophies
   operationId: findservertrophies
   responses:
     '200':

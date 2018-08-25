@@ -1,6 +1,7 @@
 get:
   tags:
    - Game Mode Information
+  summary: Basic Map information
   responses:
     '200':
       description: OK

@@ -1,7 +1,7 @@
 get:
   tags:
    - Player Information
-  summary: find status raw
+  summary: Get a player's server, with the server number stripped away
   operationId: findstatusraw
   responses:
     '200':

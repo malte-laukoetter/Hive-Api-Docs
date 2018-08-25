@@ -1,7 +1,7 @@
 get:
   tags:
    - Staff Statistics
-  summary: find v1 staff
+  summary: Lists the current staff members
   operationId: findv1staff
   responses:
     '200':
@@ -15,19 +15,27 @@ get:
               '5':
                 type: array
                 items:
-                  properties: {}
+                  type: string
+                  format: uuid
+                  pattern: '[0-9a-f]{32}'
               '6':
                 type: array
                 items:
-                  properties: {}
+                  type: string
+                  format: uuid
+                  pattern: '[0-9a-f]{32}'
               '7':
                 type: array
                 items:
-                  properties: {}
+                  type: string
+                  format: uuid
+                  pattern: '[0-9a-f]{32}'
               '8':
                 type: array
                 items:
-                  properties: {}
+                  type: string
+                  format: uuid
+                  pattern: '[0-9a-f]{32}'
             required:
               - '5'
               - '6'

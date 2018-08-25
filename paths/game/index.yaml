@@ -1,7 +1,7 @@
 get:
   tags:
    - Game Mode Information
-  summary: find game BED
+  summary: Basic game mode information
   operationId: findgameBED
   responses:
     '200':

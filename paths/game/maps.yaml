@@ -1,6 +1,7 @@
 get:
   tags:
    - Game Mode Information
+  summary: Lists all the maps of a game mode
   responses:
     '200':
       description: OK
