@@ -1,6 +1,6 @@
 openapi: 3.0.0
 servers:
-  - url: 'http://api.hivemc.com/v1'
+  - url: 'https://api.hivemc.com/v1'
 info:
   description: ''
   version: 1.0.0
