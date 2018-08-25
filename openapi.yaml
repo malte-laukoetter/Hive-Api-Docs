@@ -8,36 +8,6 @@ info:
   contact: {}
 paths:
   '/player/{nameOrUuid}':
-    get:
-      summary: Basic Information about a player
-      description: Returns a player
-      parameters:
-        - name: nameOrUuid
-          in: path
-          description: Name or UUID of the player to return
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: successful operation
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Player'
-components:
-  schemas:
-    Player:
-      type: object
-      properties:
-        username:
-          type: string
-        modernRank:
-          type: object
-          properties:
-            enum:
-              type: string
-            human:
-              type: string
-            index:
-              type: integer
+    $ref: './paths/player/index.yaml'
+  '/games':
+    $ref: './paths/games.yaml'

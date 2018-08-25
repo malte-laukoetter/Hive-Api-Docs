@@ -1,0 +1,15 @@
+get:
+  summary: Lists all GameModes
+  description: Returns a map containing the gameids and names
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties:
+              type: string
+            example:
+              BED: BedWars
+              DR: DeathRun

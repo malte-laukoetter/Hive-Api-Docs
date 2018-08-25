@@ -1,0 +1,20 @@
+type: object
+properties:
+  progress:
+    type: integer
+  unlockedAt:
+    type: integer
+    description: timestamp
+  from:
+    type: string
+    description:|
+      only for THESWARM
+      uuid of the player that has infected this player
+  game:
+    type: string
+    description:|
+      only for THESWARM
+      name of the game the player was infected in 
+required:
+  - progress
+  - unlockedAt
