@@ -4,7 +4,13 @@ get:
   parameters:
     - name: nameOrUuid
       in: path
-      description: Name or UUID of the player to return
+      description: Name or UUID of the player to return.
+      required: true
+      schema:
+        type: string
+    - name: game
+      in: path
+      description: The game mode's shortcode.
       required: true
       schema:
         type: string
@@ -16,6 +22,6 @@ get:
           schema:
             $ref: '../../schemas/player/PlayerGame.yaml'
     '404':
-      description: Profile not found, usually because the player has never played the game mode.
+      description: Profile not found, either the game is unknown or the player has never played the game mode.
                
            

@@ -9,6 +9,9 @@ info:
 paths:
   '/player/{uuid-or-name}':
     $ref: './paths/player/index.yaml'
+    
+  '/player/{uuid-or-name}/{game}':
+    $ref: './paths/player/game.yaml'
   
   '/player/{uuid-or-name}/status/raw':
     $ref: './paths/player/status-raw.yaml'
@@ -16,8 +19,6 @@ paths:
   '/player/{uuid-or-name}/status':
     $ref: './paths/player/status.yaml'
 
-  '/player/{uuid-or-name}/{game}':
-    $ref: './paths/player/game.yaml'
 
 
 
