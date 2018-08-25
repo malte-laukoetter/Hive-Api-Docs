@@ -47,8 +47,18 @@ paths:
 
   '/server/playercount':
     $ref: './paths/server/playercount.yaml'
+  '/server/uniquecount':
+    $ref: './paths/server/uniquecount.yaml'
 
   '/server/achievements':
     $ref: './paths/server/achievements.yaml'
+  '/server/trophies':
+    $ref: './paths/server/trophies.yaml'
 
+  '/server/ranks':
+    $ref: './paths/server/ranks.yaml'
+
+
+  '/staff':
+    $ref: './paths/staff.yaml'
 

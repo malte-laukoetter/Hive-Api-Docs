@@ -1,0 +1,16 @@
+get:
+  summary: find server uniquecount
+  operationId: findserveruniquecount
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              count:
+                type: number
+            required:
+              - count

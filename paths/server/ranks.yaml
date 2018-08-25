@@ -1,0 +1,23 @@
+get:
+  summary: find server ranks
+  operationId: findserverranks
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            additionalProperties:
+                type: object
+                properties:
+                  enum:
+                    type: string
+                    minLength: 1
+                  human:
+                    type: string
+                    minLength: 1
+                required:
+                  - enum
+                  - human
