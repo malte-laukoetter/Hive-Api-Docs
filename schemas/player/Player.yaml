@@ -1,8 +1,57 @@
-type: object
-properties:
-  username: 
-    type: string
-  rankName:
-    type: string
-  legacyRank:
-    type: integer
+ type: object
+ properties: 
+    username:
+      type: string
+    modernRank:
+      type: object
+      properties:
+        enum:
+          type: string
+        human:
+          type: string
+        index:
+          type: integer
+    tokens:
+      type: integer
+    medals:
+      type: integer
+    crates:
+      type: integer
+    UUID:
+      type: string
+      format: uuid
+      pattern: '[0-9a-f]{32}'
+    status:
+      type: object
+      properties:
+        description:
+          type: string
+        game:
+          type: string
+    cached:
+      type: integer
+      format: timestamp
+    firstLogin:
+      type: integer
+      format: timestamp
+    lastLogin:
+      type: integer
+      format: timestamp
+    lastLogout:
+      type: integer
+      format: timestamp
+    achievements:
+       type: object
+       additionalProperties: 
+         type: object
+         $ref: '../../schemas/Achievement.yaml'
+       trophies:
+         type: array
+         items:
+           type: object
+           properties:
+             game:
+               type: string
+             achievement: 
+               type: string
+             
